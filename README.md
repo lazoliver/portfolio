@@ -670,3 +670,16 @@ body {
 <script src="app.js"></script>
 ```
 
+​	Criando as alternâncias dos links entre classes ativas:
+
+```java
+const links = document.querySelectorAll('.link');
+
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        links.forEach(ele => ele.classList.remove('active'))/
+        link.classList.add('active');
+    })
+})	
+```
+
