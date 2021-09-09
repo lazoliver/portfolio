@@ -661,3 +661,12 @@ body {
 
 ---
 
+### Dinamismo
+
+​	Agora é hora de tornar a section project dinâmica, vamos iniciar importando dois arquivos, primeiro o arquivo que será nosso data e segundo os scripts utilizados na aplicação:
+
+```html
+<script src="project.js"></script>
+<script src="app.js"></script>
+```
+
