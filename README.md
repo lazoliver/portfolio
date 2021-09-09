@@ -53,3 +53,9 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 
 ​	Armazenando o endereço da pasta public em uma variável e criando o servidor:<img src=".\public\img\readme\server.PNG?raw=true" />
 
+​	Configurando os midelewares com app.use:
+<img src=".\public\img\readme\app.use.PNG?raw=true" />
+
+​	*Obs: express.json permitirá o compartilhamento de dados do formulário, quanto o express.static irá definir a pasta public caminho estático*
+
+​	Configurando a rota home:<img src=".\public\img\readme\app.use.PNG?raw=true" />
