@@ -10,3 +10,7 @@ let app = express();
 
 app.use(express.static(initialPath));
 app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(initialPath, "index.html"));
+})

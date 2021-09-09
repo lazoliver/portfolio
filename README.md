@@ -58,4 +58,7 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 
 ​	*Obs: express.json permitirá o compartilhamento de dados do formulário, quanto o express.static irá definir a pasta public caminho estático*
 
-​	Configurando a rota home:<img src=".\public\img\readme\app.use.PNG?raw=true" />
+​	Configurando a rota home:
+<img src=".\public\img\readme\rotaHome.PNG?raw=true" />
+
+​	
