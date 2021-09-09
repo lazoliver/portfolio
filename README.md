@@ -437,3 +437,51 @@ body {
 }
 ```
 
+---
+
+### Section Skill
+
+​	Vamos adicionar uma listagem visual das skill que temos conhecimento? Agora é a hora, com certeza o resultado será uma delicinha.
+
+​	O código em HTML:
+
+```html
+<!-- about section -->
+<section  class="about" id="about-section">
+	// elementos anteriores
+	
+   <!-- skills section -->
+   <h2 class="heading">languages and frameworks i know</h2>
+       <div class="seperator"></div>
+       <div class="skill-container">
+           <div class="skill-card large" style="--bg: #f06529">
+               <p class="skill">HTML</p>
+           </div>
+           <div class="skill-card" style="--bg: #379ad6">
+               <p class="skill">TypeScript</p>
+           </div>
+           <div class="skill-card" style="--bg: #cc6699">
+               <p class="skill">JavaScript</p>
+           </div>
+           <div class="skill-card" style="--bg: #f7df1e">
+               <p class="skill">NodeJS</p>
+           </div>
+           <div class="skill-card" style="--bg: #5ed9fb">
+               <p class="skill">ReactJS</p>
+           </div>
+           <div class="skill-card large" style="--bg: #83cd29">
+               <p class="skill">CSS</p>
+           </div>
+           <div class="skill-card" style="--bg: #326690">
+               <p class="skill">Styled Components</p>
+           </div>
+           <div class="skill-card" style="--bg: #ffa000">
+               <p class="skill">Git</p>
+           </div>
+           <div class="skill-card large" style="--bg: #5ed9fb">
+               <p class="skill">Much More</p>
+           </div>
+       </div>
+</section>
+```
+
