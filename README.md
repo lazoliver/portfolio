@@ -68,6 +68,10 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 
 ---
 
-### Index.html
+### Nav-bar
 
 ​	Enfim chegou, a fatidica hora em que veremos o front-end do portfólio (aplicação), devemos criar dentro de index.html uma estrutura básica.
+
+​	Criando a nav-bar em HTML: <img src=".\public\img\readme\nav.PNG?raw=true" />
+
+​	Estilizando com um toque de CSS:
