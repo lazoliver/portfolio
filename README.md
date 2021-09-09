@@ -64,7 +64,10 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 ​	Listening para a porta 3000, como forma de verificar se o servidor está rodando:
 <img src=".\public\img\readme\listening.PNG?raw=true" />
 
-Agora que nosso servidor já está pronto, podemos rodar o comando `npm start` no terminal e Voilà!
+​	Agora que nosso servidor já está pronto, podemos rodar o comando `npm start` no terminal e Voilà!
 
 ---
 
+### Index.html
+
+​	Enfim chegou, a fatidica hora em que veremos o front-end do portfólio (aplicação), devemos criar dentro de index.html uma estrutura básica.
