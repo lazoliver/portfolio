@@ -11,6 +11,7 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 ### Criando diretórios necessários
 
 ​	Nesta parte vamos organizar corretamente os diretórios e arquivos necessários para a nossa aplicação, abaixo uma imagem para ilustrar corretamente a estrutura:
+
 <img src=".\public\img\folders.PNG?raw=true" />
 
  * IMG = Esta pasta é destinada a armazenar as imagens utilizadas no projeto;
