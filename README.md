@@ -529,3 +529,26 @@ body {
 
 ---
 
+### Section Projects
+
+​	Na section projects, o objetivo é ser vitrine para os projetos já desenvolvidos e aqueles que ainda sergirão.
+
+​	Vamos adicionar primeiro os botões de busca:
+
+```html
+<!-- project section -->
+<section class="project" id="project-section">
+    <h2 class="heading">Project<span class="highlight">s</span></h2>
+    <p class="sub-heading">info. </p>
+    <div class="seperator"></div>
+
+    <div class="filters">
+        <button class="filter-btn active" if="all">all</button>
+        <button class="filter-btn" id="javascript">javascript</button>
+        <button class="filter-btn" id="frontend">frontend</button>
+        <button class="filter-btn" id="backend">backend</button>
+        <button class="filter-btn" id="fullstack">fullstack</button>
+    </div>
+</section>
+```
+
