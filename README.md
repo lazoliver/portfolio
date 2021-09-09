@@ -6,3 +6,11 @@
 
 Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-portfolio-using-pure-html-css-and-js-1p65>
 
+---
+
+### Criando diretórios necessários
+
+​	Nesta parte vamos organizar corretamente os diretórios e arquivos necessários para a nossa aplicação, abaixo uma imagem para ilustrar corretamente a estrutura:
+
+![Image](.\public\img\readme\folders.PNG?raw=true)
+
