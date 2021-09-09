@@ -91,6 +91,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    background-color: #1d1d1d;
 }
 
 .hero-content {
@@ -98,9 +99,13 @@ body {
 }
 
 .hero-heading {
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: capitalize;
     font-weight: 500;
+}
+
+.highlight {
+    color: #ff3559;
 }
 
 .profession {
