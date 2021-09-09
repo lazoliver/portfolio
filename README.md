@@ -552,3 +552,44 @@ body {
 </section>
 ```
 
+​	CSS mantendo padrão de construção do projeto:
+
+```css
+/* project section */
+
+.project, .contact {
+    position: relative;
+    padding: 50px 10vw;
+}
+
+.filters {
+    width: fit-content;
+    display: block;
+    margin: 100px auto;
+}
+
+.filter-btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-transform: capitalize;
+    margin: 0 5px 10px;
+    cursor: pointer;
+}
+
+.filter-btn.active {
+    background: #ff3559;
+    color: #fff;
+}
+```
+
+​	Agora é hora de criar os cards, com finalidade de estiliza-los posteriormente:
+
+```
+
+```
+
+
+
+---
+
