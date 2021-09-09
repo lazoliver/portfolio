@@ -17,8 +17,17 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
  * IMG = ;
  * APP.js = ;
  * INDEX.html = ;
- * PROJECT.js = ;
+ * PROJECT.js = Este arquivo irá conter os dados referentes aos projetos a serem apresentados;
  * STYLE.css = ;
 
 ---
+
+### NPM
+
+​	Dentro do diretório principal, vamos executar um `npm i express.js nodemon nodemailer dotenv` para iniciar o NPM no nosso projeto. Utilizaremos os seguintes itens:
+
+* Express para criar o servidor;
+* Nodemon para rodar o servidor continuadamente;
+* Nodemailer como formar de enviar os emails formulário;
+* Dotenv como forma de tornar o ambiente variável.
 
