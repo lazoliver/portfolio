@@ -11,8 +11,7 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 ### Criando diretórios necessários
 
 ​	Nesta parte vamos organizar corretamente os diretórios e arquivos necessários para a nossa aplicação, abaixo uma imagem para ilustrar corretamente a estrutura:
-
-![Image](.\public\img\readme\folders.PNG?raw=true)
+<img src=".\public\img\readme\folders.PNG?raw=true" />
 
  * IMG = ;
  * APP.js = ;
@@ -30,4 +29,22 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 * Nodemon para rodar o servidor continuadamente;
 * Nodemailer como formar de enviar os emails formulário;
 * Dotenv como forma de tornar o ambiente variável.
+
+---
+
+### Package.json
+
+​	Nosso arquivo `package.json` precisa de algumas adições a esta altura e aqui começaremos:
+
+​	Começamos adicionando o "scripts":
+<img src=".\public\img\readme\scripts.PNG?raw=true" />
+
+----
+
+### Server.js
+
+​	Aqui começa jornada para criar nosso servidor, utilizaremos Express como visto a seguir.
+
+​	Vamos começar importando as bibliotecas:
+<img src=".\public\img\readme\import.PNG?raw=true" />
 
