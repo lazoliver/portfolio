@@ -448,7 +448,7 @@ body {
 ```html
 <!-- about section -->
 <section  class="about" id="about-section">
-	// elementos anteriores
+// elementos anteriores
 	
    <!-- skills section -->
    <h2 class="heading">languages and frameworks i know</h2>
@@ -584,6 +584,22 @@ body {
 ```
 
 ​	Agora é hora de criar os cards, com finalidade de estiliza-los posteriormente:
+
+```html
+// elementos anteriores
+	<div class="project-container">
+        <div class="project-card">
+            <img src="img/" alt="">
+            <div class="content">
+                <h1 class="project-name">project #one</h1>
+                <span class="tags">#javascript</span>
+            </div>
+        </div>
+    </div>
+</section>
+```
+
+​	Estilzar o card de projeto:
 
 ```
 
