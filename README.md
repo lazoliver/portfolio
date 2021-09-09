@@ -68,10 +68,101 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 
 ---
 
-### Nav-bar
+### Navbar
 
-​	Enfim chegou, a fatidica hora em que veremos o front-end do portfólio (aplicação), devemos criar dentro de index.html uma estrutura básica.
+​	Enfim chegou, a fatidica hora em que veremos o front-end do portfólio (aplicação), devemos criar dentro de index.html uma estrutura básica e fazer os devidos imports de Css e Javascript.
 
-​	Criando a nav-bar em HTML: <img src=".\public\img\readme\nav.PNG?raw=true" />
+​	Criando a navbar em HTML: <img src=".\public\img\readme\nav.PNG?raw=true" />
 
 ​	Estilizando com um toque de CSS:
+
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    position: relative;
+    background: relative;
+    color: #fff;
+    font-family: 'roboto', sans-serif;
+}
+
+/* navbar */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #1d1d1d;
+    padding: 0 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9;
+}
+
+.brand {
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.links-container {
+    display: flex;
+    list-style: none;
+}
+
+.link {
+    text-transform: capitalize;
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    position: relative;
+}
+
+.link:hover:not(.active) {
+    opacity: 0.7;
+}
+
+.link.active::before,
+.separetor::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.link.active::after,
+.separetor::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #fff;
+}
+```
+
+Algumas observações sobre esta parte do projeto:
+
+1. O scroll-behavior permite uma rolagem de página mais suave;
+2. Utilizei um bloco de código para ilustrar de forma mais fácil.
+
+----
+
