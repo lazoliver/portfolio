@@ -14,3 +14,7 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.sendFile(path.join(initialPath, "index.html"));
 })
+
+app.listen(3000, () => {
+    console.log('Server listening on port 3000');
+})

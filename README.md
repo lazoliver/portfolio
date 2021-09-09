@@ -61,4 +61,6 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 ​	Configurando a rota home:
 <img src=".\public\img\readme\rotaHome.PNG?raw=true" />
 
-​	
+​	Listening para a porta 3000, como forma de verificar se o servidor está rodando:
+<img src=".\public\img\readme\listening.PNG?raw=true" />
+
