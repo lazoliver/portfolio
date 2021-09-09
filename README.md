@@ -11,13 +11,34 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 ### Criando diretórios necessários
 
 ​	Nesta parte vamos organizar corretamente os diretórios e arquivos necessários para a nossa aplicação, abaixo uma imagem para ilustrar corretamente a estrutura:
-<img src=".\public\img\readme\folders.PNG?raw=true" />
+<img src=".\public\img\folders.PNG?raw=true" />
 
- * IMG = ;
- * APP.js = ;
- * INDEX.html = ;
+ * IMG = Esta pasta é destinada a armazenar as imagens utilizadas no projeto;
+ * APP.js = Arquivo que conterá os scripts utilizados na aplicação;
+ * INDEX.html = Esté será o resposável por armazerar todo o código HTML utilizado;
  * PROJECT.js = Este arquivo irá conter os dados referentes aos projetos a serem apresentados;
- * STYLE.css = ;
+ * STYLE.css = Por fim, aqui ficará todas as configurações CSS de estilização.
+
+----
+
+### Project.js
+
+​	Este arquivo servirá de base para os dados usados no projeto, ele será construído da seguinte forma:
+
+```javascript
+let projects = [
+    {
+        name: "project one",
+        tags: "#javascript",
+        image: "project_1.png"
+    },
+    {
+        name: "project two",
+        tags: "#javascript",
+        image: "project_2.png"
+    },
+]
+```
 
 ---
 
@@ -37,7 +58,12 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 ​	Nosso arquivo `package.json` precisa de algumas adições a esta altura e aqui começaremos:
 
 ​	Começamos adicionando o "scripts":
-<img src=".\public\img\readme\scripts.PNG?raw=true" />
+
+```json
+"scripts": {
+	"start": "nodemon server.js"
+}
+```
 
 ----
 
@@ -46,23 +72,51 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 ​	Aqui começa jornada para criar nosso servidor, utilizaremos Express como visto a seguir. Devemos criar um arquivo com o nome server.js no diretório raiz.
 
 ​	Vamos começar importando as bibliotecas:
-<img src=".\public\img\readme\import.PNG?raw=true" />
+
+```javascript
+const express = require('express');
+const path = require('path');
+const nodemailer = require('nodemailer');
+const dotenv = require('dotenv');
+```
 
 ​	Adicionando dotenv para acessar variável de ambiente:
-<img src=".\public\img\readme\dotenv.PNG?raw=true" />
 
-​	Armazenando o endereço da pasta public em uma variável e criando o servidor:<img src=".\public\img\readme\server.PNG?raw=true" />
+```javascript
+dotenv.config();
+```
+
+​	Armazenando o endereço da pasta public em uma variável e criando o servidor:
+
+```javascript
+let initialPath = path.join(__dirname, "public");
+let app = express();
+```
 
 ​	Configurando os midelewares com app.use:
-<img src=".\public\img\readme\app.use.PNG?raw=true" />
+
+```javascript
+app.use(express.static(initialPath));
+app.use(express.json());
+```
 
 ​	*Obs: express.json permitirá o compartilhamento de dados do formulário, quanto o express.static irá definir a pasta public caminho estático*
 
 ​	Configurando a rota home:
-<img src=".\public\img\readme\rotaHome.PNG?raw=true" />
+
+```javascript
+app.get('/', (req, res) => {
+    res.sendFile(path.join(initialPath, "index.html"));
+})
+```
 
 ​	Listening para a porta 3000, como forma de verificar se o servidor está rodando:
-<img src=".\public\img\readme\listening.PNG?raw=true" />
+
+```javascript
+app.listen(3000, () => {
+    console.log('Server listening on port 3000');
+})
+```
 
 ​	Agora que nosso servidor já está pronto, podemos rodar o comando `npm start` no terminal e Voilà!
 
@@ -72,7 +126,24 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 
 ​	Enfim chegou, a fatidica hora em que veremos o front-end do portfólio (aplicação), devemos criar dentro de index.html uma estrutura básica e fazer os devidos imports de Css e Javascript.
 
-​	Criando a navbar em HTML: <img src=".\public\img\readme\nav.PNG?raw=true" />
+​	Criando a navbar em HTML: 
+
+```javascript
+<!-- navbar -->
+<nav class="navbar">
+    <h1 class="brand">logo</h1>
+    <div class="toggle-btn">
+        <span></span>
+        <span></span>
+    </div>
+    <ul class="links-container">
+        <li class="links-item"><a href="#" class="link active">home</a></li>
+        <li class="links-item"><a href="#project-section" class="link">project</a></li>
+        <li class="links-item"><a href="#about-section" class="link">about</a></li>
+        <li class="links-item"><a href="#contact-section" class="link">contact</a></li>
+    </ul>
+</nav>
+```
 
 ​	Estilizando com um toque de CSS:
 
@@ -159,10 +230,24 @@ body {
 }
 ```
 
-Algumas observações sobre esta parte do projeto:
-
-1. O scroll-behavior permite uma rolagem de página mais suave;
-2. Utilizei um bloco de código para ilustrar de forma mais fácil.
+​	*Obs: O scroll-behavior permite uma rolagem de página mais suave*
 
 ----
+
+### Header
+
+​	Para o nosso header partiremos do index.html novamente, abaixo como foi criado a section:
+
+```html
+<!-- home section -->
+<section class="home">
+    <div class="hero-content">
+        <h1 class="hero-heading"><span class="highlight">Olá, </span>eu sou o Wilian</h1>
+        <p class="profession">web developer</p>
+        <p class="info">info</p>
+        <a href="#contact-section" class="btn">contact</a>
+    </div>
+    <img src="img/" class="image" alt="" />
+</section>
+```
 
