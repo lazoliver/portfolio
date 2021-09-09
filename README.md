@@ -14,3 +14,11 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 
 ![Image](.\public\img\readme\folders.PNG?raw=true)
 
+ * IMG = ;
+ * APP.js = ;
+ * INDEX.html = ;
+ * PROJECT.js = ;
+ * STYLE.css = ;
+
+---
+
