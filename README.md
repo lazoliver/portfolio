@@ -123,7 +123,7 @@ app.listen(3000, () => {
 
 ---
 
-### Navbar
+### Section Navbar
 
 ​	Enfim chegou, a fatidica hora em que veremos o front-end do portfólio (aplicação), devemos criar dentro de index.html uma estrutura básica e fazer os devidos imports de Css e Javascript.
 
@@ -235,7 +235,7 @@ body {
 
 ----
 
-### Header
+### Section Header
 
 ​	Para o nosso header partiremos do index.html novamente, abaixo como foi criado a section:
 
@@ -267,6 +267,7 @@ body {
     align-items: center;
     justify-content: space-between;
     position: relative;
+    background-color: #1d1d1d;
 }
 
 .hero-content {
@@ -274,9 +275,13 @@ body {
 }
 
 .hero-heading {
-    font-size: 5rem;
+    font-size: 4rem;
     text-transform: capitalize;
     font-weight: 500;
+}
+
+.highlight {
+    color: #ff3559;
 }
 
 .profession {
@@ -330,4 +335,29 @@ body {
 ```
 
 ---
+
+### Section About
+
+​	Nosso projeto já está bem avançado, mas agora vamos adicionar um campo Sobre, para isso devemos criar um section about.
+
+​	Em HTML:
+
+```html
+<!-- about section -->
+<section  class="about" id="about-section">
+    <h2 class="heading">about <span class="highlight">me</span></h2>
+    <p class="sub-heading">info. </p>
+    <div class="separator"></div>
+
+    <div class="about-me-container">
+        <div class="left-col">
+            <img src="img/" class="about-image" alt="" />
+        </div>
+        <div class="right-col">
+            <p class="about-para">info. </p>
+            <a href="#" class="btn">download cv</a>
+        </div>
+    </div>
+</section>
+```
 
