@@ -48,3 +48,8 @@ Link original: <https://dev.to/kunaal438/how-to-make-fully-responsive-modern-por
 ​	Vamos começar importando as bibliotecas:
 <img src=".\public\img\readme\import.PNG?raw=true" />
 
+​	Adicionando dotenv para acessar variável de ambiente:
+<img src=".\public\img\readme\dotenv.PNG?raw=true" />
+
+​	Armazenando o endereço da pasta public em uma variável e criando o servidor:<img src=".\public\img\readme\server.PNG?raw=true" />
+
