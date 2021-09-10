@@ -683,3 +683,27 @@ links.forEach(link => {
 })	
 ```
 
+​	Hora de criar o dinamismo no project cards. Para isso vamos adicionar ao app.js o código abaixo:
+
+```javascript
+projects.forEach(project => {
+    projectContainer.innerHTML += `
+    <div class="project-card" data-tags="#all, ${project.tags}">
+        <img src="img/${project.image}" alt="">
+        <div class="content">
+            <h1 class="project-name">${project.name}</h1>
+            <span class="tags">${project.tags}</span>
+        </div>
+    </div>
+    `;
+})
+```
+
+*Obs: Este método de construção que utiliza `` se chama template strings, onde podemos usar atributos de um objeto, neste caso o objeto está contido em project.js*
+
+​	Vamos tornar os botões de filtro funcional:
+
+```
+
+```
+
