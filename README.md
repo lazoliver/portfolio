@@ -673,6 +673,8 @@ body {
 ​	Criando as alternâncias dos links entre classes ativas:
 
 ```java
+// Links
+
 const links = document.querySelectorAll('.link');
 
 links.forEach(link => {
@@ -680,12 +682,16 @@ links.forEach(link => {
         links.forEach(ele => ele.classList.remove('active'))/
         link.classList.add('active');
     })
-})	
+})
 ```
 
 ​	Hora de criar o dinamismo no project cards. Para isso vamos adicionar ao app.js o código abaixo:
 
 ```javascript
+// creating dynamic project card
+
+const projectContainer = document.querySelector('.project-container');
+
 projects.forEach(project => {
     projectContainer.innerHTML += `
     <div class="project-card" data-tags="#all, ${project.tags}">
@@ -701,9 +707,28 @@ projects.forEach(project => {
 
 *Obs: Este método de construção que utiliza `` se chama template strings, onde podemos usar atributos de um objeto, neste caso o objeto está contido em project.js*
 
-​	Vamos tornar os botões de filtro funcional:
+​	Vamos tornar os botões de filtro funcionais:
 
-```
+```javascript
+// filters
 
+const filters = document.querySelectorAll('.filter-btn');
+
+filters.forEach(filterBtn => {
+    filterBtn.addEventListener('click', () => {
+        let id = filterBtn.getAttribute('id');
+        let projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach(card => {
+            if(card.getAttribute('data-tags').includes(id)){
+                card.classList.remove('hide');
+            } else {
+                card.classList.add('hide');
+            }
+        })
+
+        filters.forEach(btn => btn.classList.remove('active'));
+        filterBtn.classList.add('active');
+    })
+})
 ```
 
