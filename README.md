@@ -819,3 +819,38 @@ filters.forEach(filterBtn => {
 }
 ```
 
+---
+
+### Criando a rota de email dentro do server.js
+
+```javascript
+app.post('/mail', (req, res) => {
+    const { firstname, lastname, email, msg } = req.body;
+
+    const transporter = nodemailer.createTransport({
+        service: 'gmail',
+        auth: {
+            user: process.env.EMAIL,
+            pass: process.env.PASSWORD
+        }
+    })
+    
+    const mailOptions = {
+        from: 'sender email',
+        to: 'receiver email',
+        subject: 'Postfolio',
+        text: `First name: ${firstname}, \nLast name: ${lastname},\nEmail: ${email}, \nMessage: ${msg}`
+    }
+
+    transporter.sendMail(mailOptions, (err, result) => {
+        if(err) {
+            console.log(err);
+            res.json('opps! it seems like some error occured plz. try again.')
+        } else {
+            res.json('thanks for e-mailing me. I will reply to you within 2 working days');
+        }
+    })
+})
+```
+
+*Obs: Quando criamos nosso serviço de email com nodemailer, usamos process.env.EMAIL & process.env.PASSWORD para usar variáveis de ambiente, agora precisamos criar um arquivo no diretório raiz nomeado como .env*

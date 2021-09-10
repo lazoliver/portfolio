@@ -368,8 +368,11 @@ body {
     border: none;
     outline: none;
     margin: 30px 0;
-    text-transform: capitalize;
     resize: none;
+}
+
+.input {
+    text-transform: capitalize;
 }
 
 .message {
