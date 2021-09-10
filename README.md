@@ -821,7 +821,7 @@ filters.forEach(filterBtn => {
 
 ---
 
-### Criando a rota de email dentro do server.js
+### Criando a rota de email dentro do app.js
 
 ```javascript
 app.post('/mail', (req, res) => {
@@ -854,3 +854,4 @@ app.post('/mail', (req, res) => {
 ```
 
 *Obs: Quando criamos nosso serviço de email com nodemailer, usamos process.env.EMAIL & process.env.PASSWORD para usar variáveis de ambiente, agora precisamos criar um arquivo no diretório raiz nomeado como .env*
+

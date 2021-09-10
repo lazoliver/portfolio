@@ -45,4 +45,4 @@ app.post('/mail', (req, res) => {
             res.json('thanks for e-mailing me. I will reply to you within 2 working days');
         }
     })
-})
+});
