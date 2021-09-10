@@ -732,3 +732,32 @@ filters.forEach(filterBtn => {
 })
 ```
 
+---
+
+### Section Contact
+
+​	Dev, agora é a hora de dar destaque ao que mais importa... Voce! Aqui será a section que os recrutadores e colegas dev entrarão em contato com você.
+
+​	Section contact em HTML:
+
+```html
+<!--  contact form -->
+<section class="contact" id="contact-section">
+    <h2 class="heading">Contact<span class="highlight"> me</span></h2>
+    <p class="sub-heading">Info</p>
+    <div class="seperator"></div>
+
+    <div class="contact-form">
+        <div class="name">
+            <input type="text" class="fist-name" required placeholder="first name" />
+            <input type="text" class="last-name" required placeholder="last name" />
+        </div>
+        <input type="email" required class="email" placeholder="email" />
+        <textarea class="message" placeholder="message" required></textarea>
+        <button class="btn contact-btn">contact</button>
+    </div>
+</section>
+    
+<footer class="footer">made with love by Wilian S. | LazOliver</footer>
+```
+
