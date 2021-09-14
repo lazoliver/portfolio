@@ -58,18 +58,17 @@ contactBtn.addEventListener('click', () => {
     if(firstName.value.length && lastName.value.length && email.value.length && msg.value.length){
         fetch('/mail', {
             method: 'post',
-            headers: new Headers({'Contect-Type': 'application/json'}),
+            headers: new Headers({'Content-Type': 'application/json'}),
             body: JSON.stringify({
-                firstName: firstName.value,
-                lastName: lastName.value,
+                firstname: firstName.value,
+                lastname: lastName.value,
                 email: email.value,
                 msg: msg.value,
             })
         })
-
         .then(res => res.json())
         .then(data => {
             alert(data);
         })
     }
-});
+})
