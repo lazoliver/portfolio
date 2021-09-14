@@ -402,3 +402,11 @@ body {
     text-transform: capitalize;
     line-height: 30px;
 }
+
+/* tablet view */
+
+@media (max-width: 996px){
+    html {
+        font-size: 14px;
+    }
+}
