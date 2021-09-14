@@ -836,8 +836,8 @@ app.post('/mail', (req, res) => {
     })
     
     const mailOptions = {
-        from: 'sender email',
-        to: 'receiver email',
+        from: `${email}`,
+        to: process.env.EMAIL,
         subject: 'Postfolio',
         text: `First name: ${firstname}, \nLast name: ${lastname},\nEmail: ${email}, \nMessage: ${msg}`
     }
@@ -854,4 +854,6 @@ app.post('/mail', (req, res) => {
 ```
 
 *Obs: Quando criamos nosso serviço de email com nodemailer, usamos process.env.EMAIL & process.env.PASSWORD para usar variáveis de ambiente, agora precisamos criar um arquivo no diretório raiz nomeado como .env*
+
+----
 
