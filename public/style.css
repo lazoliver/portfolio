@@ -438,6 +438,10 @@ body {
         transform: rotate(-45deg);
     }
 
+    .toggle-btn span:nth-child(2) {
+        top: 70%;
+    }
+
     /* links */
 
     .links-container {
@@ -502,5 +506,9 @@ body {
 
     .skill-container, .project-container {
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .skill-card {
+        grid-column: 1 span;
     }
 }

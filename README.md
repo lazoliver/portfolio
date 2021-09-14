@@ -897,6 +897,10 @@ app.post('/mail', (req, res) => {
         transform: rotate(-45deg);
     }
 
+    .toggle-btn span:nth-child(2) {
+        top: 70%;
+    }
+
     /* links */
 
     .links-container {
@@ -962,13 +966,25 @@ app.post('/mail', (req, res) => {
     .skill-container, .project-container {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .skill-card {
+        grid-column: 1 span;
+    }
 }
 ```
 
 ​	Vamos adicionar o botão que terá a animação da tag `<span>`:
 
-```
+```javascript
+//toggle button
 
+const toggleBtn = document.querySelector('.toggle-btn');
+const linkContainer = document.querySelector('.link-container');
+
+toggleBtn.addEventListener('click', () => {
+    toggleBtn.classList.toggle('active');
+    linkContainer.classList.toggle('show');
+})
 ```
 
  
