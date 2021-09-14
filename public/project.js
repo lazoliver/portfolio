@@ -2,7 +2,7 @@ let projects = [
     {
         name: "project one",
         tags: "#javascript",
-        image: "img.png"
+        image: "project_1.png"
     },
     {
         name: "project two",
