@@ -857,3 +857,118 @@ app.post('/mail', (req, res) => {
 
 ----
 
+### Responsividade
+
+​	Para fechar com chave de ouro, tornaremos nosso site portfólio responsivo para dispositivos móveis. Vamos começar configurando a página para tablets.
+
+```css
+/* tablet view */
+
+@media (max-width: 996px) {
+    html {
+        font-size: 14px;
+    }
+
+    /* toggle btn */
+    .toggle-btn {
+        position: absolute;
+        width: 40px;
+        height: 40px;
+        right: 10vw;
+        cursor: pointer;
+    }
+
+    .toggle-btn span {
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        top: 30%;
+        transition: .5s;
+    }
+
+    .toggle-btn.active span:nth-child(1) {
+        top: 50%;
+        transform: rotate(45deg);
+    }
+
+    .toggle-btn.active span:nth-child(2) {
+        top: 50%;
+        transform: rotate(-45deg);
+    }
+
+    /* links */
+
+    .links-container {
+        position: absolute;
+        top: 60px;
+        background: #1d1d1d;
+        width: 100%;
+        left: 0;
+        padding: 0 10vw;
+        flex-direction: column;
+        transition: .5s;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .links-container.show {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    .link {
+        margin-left: auto;
+        text-align: center;
+        display: block;
+        height: 50px;
+    }
+
+    /* home section */
+
+    .home {
+        flex-direction: column-reverse;
+        height: fit-content;
+        padding-bottom: 50px;
+    }
+
+    .home .image {
+        width: 250px;
+        margin: 40px;
+    }
+
+    .hero-content {
+        width: 70%;
+        min-width: 350px;
+        text-align: center;
+    }
+
+    .hero-heading {
+        font-size: 4.5rem;
+    }
+
+    /* about-section */
+
+    .about-me-container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-col{
+        margin: auto;
+        width: 50%;
+        min-width: 320px;
+    }
+
+    .skill-container, .project-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+```
+
+​	Vamos adicionar o botão que terá a animação da tag `<span>`:
+
+```
+
+```
+
+ 
