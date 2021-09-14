@@ -76,7 +76,7 @@ contactBtn.addEventListener('click', () => {
 //toggle button
 
 const toggleBtn = document.querySelector('.toggle-btn');
-const linkContainer = document.querySelector('.link-container');
+const linkContainer = document.querySelector('.links-container');
 
 toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('active');
