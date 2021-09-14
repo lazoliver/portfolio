@@ -987,4 +987,49 @@ toggleBtn.addEventListener('click', () => {
 })
 ```
 
- 
+ 	E por último e não menos importante, responsivo mobile:
+
+```css
+    /* mobile view */
+
+    @media (max-width: 500px) {
+        html {
+            font-size: 12px;
+        }
+
+        p, .sub-heading, .about-para, .left-col::before, .tags {
+            font-size: 1.4rem;
+        }
+
+        .about-image {
+            width: 90%;
+            margin: auto;
+            display: block;
+        }
+
+        .skill-container, .project-container {
+            grid-template-columns: 1fr;
+        }
+
+        .skill {
+            font-size: 2.5rem;
+        }
+
+        .project-name {
+            font-size: 3rem 
+        }
+
+        .name {
+            flex-direction: column;
+        }
+
+        .name input {
+            width: 100%;
+        }
+
+        .first-name {
+            margin-bottom: 20px !important;
+        }
+    }
+}
+```
