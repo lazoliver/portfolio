@@ -3,6 +3,7 @@ const path = require('path');
 const nodemailer = require('nodemailer');
 const dotenv = require('dotenv');
 const { getMaxListeners } = require('process');
+const { fstat } = require('fs');
 
 dotenv.config();
 

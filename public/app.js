@@ -81,4 +81,4 @@ const linkContainer = document.querySelector('.links-container');
 toggleBtn.addEventListener('click', () => {
     toggleBtn.classList.toggle('active');
     linkContainer.classList.toggle('show');
-})
+});
